@@ -1,7 +1,7 @@
 <template>
 <div>
     <h1>THUNDER DESIGN</h1>
-    <router-link class="toDocs">component</router-link>
+    <router-link class="toDocs" to="docs">component</router-link>
 </div>
 </template>
 

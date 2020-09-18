@@ -4,8 +4,8 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 import Homepage from "../components/Homepage.vue";
 import Docs from "../components/Docs.vue";
-const routes = [
-  {
+import Alert from "../components/Alert.vue"
+const routes = [{
     path: "/",
     redirect: "/homepage",
   },
@@ -18,6 +18,13 @@ const routes = [
     path: "/docs",
     name: "docs",
     component: Docs,
+    children:[
+      {
+        path: "/alert",
+        name: "alert",
+        component: Alert,
+      },
+    ]
   },
 ];
 
