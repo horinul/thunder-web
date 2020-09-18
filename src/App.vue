@@ -12,5 +12,10 @@ export default {
 </script>
 
 <style>
-
+html,
+body,
+h1 {
+    margin: 0;
+    padding: 0;
+}
 </style>
