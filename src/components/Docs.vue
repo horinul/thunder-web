@@ -2,10 +2,12 @@
   <div class="component">
     <div class="header">
       <h1 class="title">THUNDER⚡</h1>
-      <router-link class="toHomepage" to="homepage">主页</router-link>
+      <router-link class="toHomepage" to="homepage"
+        ><span class="toHomeImg"></span>主页</router-link
+      >
     </div>
     <div class="body">
-      <div class="aside">
+      <div class="aside" id="box">
         <h2>组件</h2>
         <router-link
           class="directoryItem"
@@ -16,9 +18,15 @@
           {{ item }}
         </router-link>
       </div>
-      <div class="main"><router-view></router-view></div>
+      <div class="main" id="box"><router-view></router-view></div>
     </div>
-    <div class="footer">foot</div>
+    <div class="footer">
+      <div class="footerVersion">2020 1.0</div>
+      <div class="footerTools">
+        <span class="footerLink"></span><span>GitHub</span>
+        <span class="footerLink"></span><span>反馈建议</span>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -38,7 +46,7 @@ export default {
         "Message 消息提示",
         "Modal 对话框",
         "Radio 单选",
-        "Select 选择器",
+        // "Select 选择器",
         "Switch 开关",
         "Tag 标签",
         "Tooltip 文字提示",
@@ -72,19 +80,27 @@ export default {
 
     .toHomepage {
       margin-right: 10px;
+      color: #fff;
+      text-decoration: none;
+      .toHomeImg {
+        background-image: url("../static/toHome.png");
+        background-size: cover;
+        display: inline-block;
+        height: 23px;
+        width: 23px;
+        margin-right: 4px;
+        vertical-align: middle;
+      }
     }
   }
 
   .body {
     display: flex;
-
     .aside {
       flex: 2;
-      // background-color: cornflowerblue;
-      height: 800px;
-      overflow: auto;
+      max-height: 800px;
       margin-left: 10px;
-
+      overflow: hidden;
       .directoryItem {
         display: block;
         height: 40px;
@@ -96,18 +112,63 @@ export default {
         text-decoration: none;
       }
     }
-
+    .aside:hover {
+      overflow: auto;
+    }
     .main {
       flex: 8;
       //   background-color: darkgrey;
       max-height: 800px;
+      // margin: 20px;
+      padding: 0 20px;
+      // overflow: auto;
+      overflow: hidden;
+    }
+    .main:hover {
       overflow: auto;
     }
   }
 
   .footer {
-    height: 60px;
-    // background-color: darkslateblue;
+    height: 40px;
+    background-color: cadetblue;
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    .footerVersion {
+    }
+    .footerTools {
+      cursor: pointer;
+      .footerLink {
+        background-image: url("../static/link.png");
+        background-size: cover;
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        margin: 0 5px 0 10px;
+        vertical-align: middle;
+      }
+    }
   }
+}
+// 滚动条样式
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+#box::-webkit-scrollbar {
+  width: 6px;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+#box::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #fff;
+  border-radius: 10px;
+  background-color: #eee;
+  margin: 10px;
+}
+
+/*定义滑块 内阴影+圆角*/
+#box::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #d0cece;
 }
 </style>

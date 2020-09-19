@@ -1,0 +1,48 @@
+.dv-json-editor .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #eaeef3;
+  color: #00193a;
+}
+.dv-json-editor .hljs-doctag,
+.dv-json-editor .hljs-keyword,
+.dv-json-editor .hljs-name,
+.dv-json-editor .hljs-section,
+.dv-json-editor .hljs-selector-tag,
+.dv-json-editor .hljs-strong,
+.dv-json-editor .hljs-title {
+  font-weight: 700;
+}
+.dv-json-editor .hljs-comment {
+  color: #738191;
+}
+.dv-json-editor .hljs-addition,
+.dv-json-editor .hljs-built_in,
+.dv-json-editor .hljs-literal,
+.dv-json-editor .hljs-name,
+.dv-json-editor .hljs-quote,
+.dv-json-editor .hljs-section,
+.dv-json-editor .hljs-selector-class,
+.dv-json-editor .hljs-selector-id,
+.dv-json-editor .hljs-string,
+.dv-json-editor .hljs-tag,
+.dv-json-editor .hljs-title,
+.dv-json-editor .hljs-type {
+  color: #0048ab;
+}
+.dv-json-editor .hljs-attribute,
+.dv-json-editor .hljs-bullet,
+.dv-json-editor .hljs-deletion,
+.dv-json-editor .hljs-link,
+.dv-json-editor .hljs-meta,
+.dv-json-editor .hljs-regexp,
+.dv-json-editor .hljs-subst,
+.dv-json-editor .hljs-symbol,
+.dv-json-editor .hljs-template-variable,
+.dv-json-editor .hljs-variable {
+  color: #4c81c9;
+}
+.dv-json-editor .hljs-emphasis {
+  font-style: italic;
+}
