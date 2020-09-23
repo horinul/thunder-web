@@ -99,17 +99,20 @@ export default {
     .aside {
       flex: 2;
       max-height: 800px;
-      margin-left: 10px;
+      // margin-left: 10px;
       overflow: hidden;
       .directoryItem {
         display: block;
         height: 40px;
-        width: 100%;
+        width: 90%;
         color: #333;
         line-height: 40px;
-        padding: 10px 0;
+        padding: 10px 10px;
         cursor: pointer;
         text-decoration: none;
+      }
+      .directoryItem:hover{
+        background-color: rgba(165, 223, 250, 0.3);
       }
     }
     .aside:hover {
@@ -137,8 +140,6 @@ export default {
     text-align: center;
     padding: 10px 0;
     font-size: 12px;
-    .footerVersion {
-    }
     .footerTools {
       cursor: pointer;
       .footerLink {
