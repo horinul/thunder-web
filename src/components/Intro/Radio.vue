@@ -15,10 +15,14 @@ export default {
   data() {
     return {
       code: [
-        ` <div>  <THRadio value="test" id="radio1" name="radioGroup1">aaa</THRadio>
-      <THRadio type="blue" value="aaa" id="radio2" name="radioGroup1">aaa</THRadio></div>`,
-` <div>  <THRadio value="test" id="radio3" name="radioGroup2" :disabled="true">aaa</THRadio>
-      <THRadio type="blue" value="aaa" id="radio4" name="radioGroup2" :checked="true">aaa</THRadio></div>`
+        ` <div>  
+    <THRadio value="test" id="radio1" name="radioGroup1">aaa</THRadio>
+    <THRadio type="blue" value="aaa" id="radio2" name="radioGroup1">aaa</THRadio>
+ </div>`,
+` <div>  
+    <THRadio value="test" id="radio3" name="radioGroup2" :disabled="true">aaa</THRadio>
+    <THRadio type="blue" value="aaa" id="radio4" name="radioGroup2" :checked="true">aaa</THRadio>
+ </div>`
       ],
       text: Radio,
     };

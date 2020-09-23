@@ -15,13 +15,10 @@ export default {
   data() {
     return {
       code: [
-        ` <div><THButton>testModal</THButton>
-      <THModal
-        :isActiveProp="true"
-        title="测试标题"
-   
-        icon="icon8" >dbajshbdjsahbhdsb</THModal>
-    </div>`,
+        `<div>
+    <THButton>testModal</THButton>
+    <THModal :isActiveProp="true" title="测试标题" icon="icon8" >dbajshbdjsahbhdsb</THModal>
+</div>`,
       ],
       text: Modal,
     };

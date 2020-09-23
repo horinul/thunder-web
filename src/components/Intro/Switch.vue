@@ -15,37 +15,19 @@ export default {
   data() {
     return {
       code: [
-        ` <div><THSwitch      
-        disabledText="力学"
-        checkedText="量子"></THSwitch></div>`,
-     ` <div>      
-        <THSwitch
-        disabledText="力学"
-        checkedText="量子"
-          :checked="true"
-      ></THSwitch>
-      <THSwitch
-            disabledText="力学"
-        checkedText="量子"
-        :disabled="true"
-      ></THSwitch></div>`,   
-        ` <div>      
-        <THSwitch
-             disabledText="力学"
-        checkedText="量子"
-        size="little"
-      ></THSwitch>
-      <THSwitch      
-       disabledText="力学"
-        checkedText="量子"></THSwitch>
-      <THSwitch       
-      disabledText="力学"
-        checkedText="量子" size="large"></THSwitch>
-      <THSwitch
-              disabledText="力学"
-        checkedText="量子"
-        size="increase"
-      ></THSwitch></div>`,
+        `<div>
+    <THSwitch disabledText="力学" checkedText="量子"></THSwitch>
+</div>`,
+     `<div>      
+  <THSwitch disabledText="力学" checkedText="量子" :checked="true"></THSwitch>
+  <THSwitch disabledText="力学" checkedText="量子" :disabled="true"></THSwitch>
+</div>`,   
+        `<div>     
+    <THSwitch disabledText="力学" checkedText="量子" size="little"></THSwitch>
+    <THSwitch disabledText="力学" checkedText="量子"></THSwitch>
+    <THSwitch disabledText="力学" checkedText="量子" size="large"></THSwitch>
+    <THSwitch disabledText="力学" checkedText="量子" size="increase"></THSwitch>
+</div>`,
       ],
       text: Switch,
     };

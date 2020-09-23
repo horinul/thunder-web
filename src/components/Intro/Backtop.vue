@@ -15,14 +15,10 @@ export default {
   data() {
     return {
       code: [
-        ` <div><THBackTop></THBackTop>
-</div>`,
-        `<div><THBackTop icon="icon2" :right="60"></THBackTop>
-</div>`,
-        `<div><THBackTop :height="200" :bottom="100" :right="60"></THBackTop>
-</div>`,
-        `<div><THBackTop  :right="1400"></THBackTop>
-</div>`,
+        ` <div><THBackTop></THBackTop></div>`,
+        `<div><THBackTop icon="icon2" :right="60"></THBackTop></div>`,
+        `<div><THBackTop :height="200" :bottom="100" :right="60"></THBackTop></div>`,
+        `<div><THBackTop :right="1400"></THBackTop></div>`,
       ],
       text: Backtop,
     };

@@ -15,10 +15,12 @@ export default {
   data() {
     return {
       code: [
-        ` <div><THButton icon="icon6">Message</THButton>
-        <THButton icon="icon6">errorMessage</THButton>
-      <THButton icon="icon6">warnMessage</THButton>
-      <THButton icon="icon6">successMessage</THButton></div>`,
+        ` <div>
+    <THButton icon="icon6">Message</THButton>
+    <THButton icon="icon6">errorMessage</THButton>
+    <THButton icon="icon6">warnMessage</THButton>
+    <THButton icon="icon6">successMessage</THButton>
+</div>`,
         ` <div><THButton icon="icon6">durationSuccessMessage</THButton></div>`,
         ` <div><THButton icon="icon6">distanceFromTopSuccessMessage</THButton></div>`
       ],

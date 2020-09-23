@@ -15,18 +15,23 @@ export default {
   data() {
     return {
       code: [
-        ` <div><THInput type="text" placeholder="text"></THInput>
-<THInput type="textarea" placeholder="textarea"></THInput>
-<THInput type="tel" placeholder="tel"></THInput>
-<THInput  type="password" placeholder="password"></THInput>
-<THInput  type="email" placeholder="email"></THInput>
-<THInput  type="number" placeholder="number"></THInput></div>`,
-        `<div><THInput placeholder="text" icon="icon1" type="text"></THInput>
-        <THInput placeholder="tel" icon="icon2" type="tel"></THInput></div>`,
-        `<div><THInput type="text" placeholder="text" size="little"></THInput>
-        <THInput type="text" placeholder="text" size="default"></THInput>
-        <THInput type="text" placeholder="text" size="large"></THInput>
-        <THInput type="text" placeholder="text" size="increase"></THInput>
+        ` <div>
+    <THInput type="text" placeholder="text"></THInput>
+    <THInput type="textarea" placeholder="textarea"></THInput>
+    <THInput type="tel" placeholder="tel"></THInput>
+    <THInput  type="password" placeholder="password"></THInput>
+    <THInput  type="email" placeholder="email"></THInput>
+    <THInput  type="number" placeholder="number"></THInput>
+</div>`,
+        `<div>
+    <THInput placeholder="text" icon="icon1" type="text"></THInput>
+    <THInput placeholder="tel" icon="icon2" type="tel"></THInput>
+</div>`,
+        `<div>
+    <THInput type="text" placeholder="text" size="little"></THInput>
+    <THInput type="text" placeholder="text" size="default"></THInput>
+    <THInput type="text" placeholder="text" size="large"></THInput>
+    <THInput type="text" placeholder="text" size="increase"></THInput>
 </div>`,
       ],
       text: Input,

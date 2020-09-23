@@ -15,14 +15,18 @@ export default {
   data() {
     return {
       code: [
-        ` <div style="display:flex"><THIcon size="little"></THIcon><THIcon size="default"></THIcon>
-        <THIcon size="large"></THIcon><THIcon size="increase"></THIcon>
+        `<div style="display:flex">
+    <THIcon size="little"></THIcon>
+    <THIcon size="default"></THIcon>
+    <THIcon size="large"></THIcon>
+    <THIcon size="increase"></THIcon>
 </div>`,
-        `<div style="display:flex"><THIcon icon="icon1"></THIcon><THIcon icon="icon2"></THIcon>
-        <THIcon icon="icon3"></THIcon><THIcon  icon="icon4"></THIcon>
-        <THIcon icon="icon5"></THIcon><THIcon  icon="icon6"></THIcon>
-        <THIcon icon="icon7"></THIcon><THIcon  icon="icon8"></THIcon>
-        <THIcon icon="icon9"></THIcon><THIcon  icon="icon10"></THIcon>
+        `<div style="display:flex">
+      <THIcon icon="icon1"></THIcon><THIcon icon="icon2"></THIcon>
+      <THIcon icon="icon3"></THIcon><THIcon icon="icon4"></THIcon>
+      <THIcon icon="icon5"></THIcon><THIcon icon="icon6"></THIcon>
+      <THIcon icon="icon7"></THIcon><THIcon icon="icon8"></THIcon>   
+      <THIcon icon="icon9"></THIcon><THIcon icon="icon10"></THIcon>
 </div>`,
       ],
       text: Icon,

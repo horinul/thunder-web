@@ -15,18 +15,24 @@ export default {
   data() {
     return {
       code: [
-        ` <div>      <THTag>tagtag</THTag>
-      <THTag :borderShow="true">tagtag</THTag></div>`,
-      ` <div>  <THTag>tagtag</THTag>
-      <THTag color="yellow">tagtag</THTag>
-      <THTag color="red">tagtag</THTag>
-      <THTag color="blue">tagtag</THTag>
-      <THTag :borderShow="true">tagtag</THTag>
-      <THTag color="yellow" :borderShow="true">tagtag</THTag>
-      <THTag color="red" :borderShow="true">tagtag</THTag>
-      <THTag color="blue" :borderShow="true">tagtag</THTag></div>`,    
-        ` <div>  <THTag :showClose="false">tagtag</THTag> <THTag>tagtag</THTag>
-    </div>`,
+        `<div>      
+    <THTag>tagtag</THTag>
+    <THTag :borderShow="true">tagtag</THTag>
+</div>`,
+      `<div>  
+    <THTag>tagtag</THTag>
+    <THTag color="yellow">tagtag</THTag>
+    <THTag color="red">tagtag</THTag>
+    <THTag color="blue">tagtag</THTag>
+    <THTag :borderShow="true">tagtag</THTag>
+    <THTag color="yellow" :borderShow="true">tagtag</THTag>
+    <THTag color="red" :borderShow="true">tagtag</THTag>
+    <THTag color="blue" :borderShow="true">tagtag</THTag>
+</div>`,    
+        `<div>
+    <THTag :showClose="false">tagtag</THTag>
+    <THTag>tagtag</THTag>
+</div>`,
       ],
       text: Tag,
     };

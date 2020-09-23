@@ -15,9 +15,11 @@ export default {
   data() {
     return {
       code: [
-        ` <div><THLoading></THLoading>
-      <THLoading type="balls"></THLoading>
-      <THLoading type="cylon"></THLoading></div>`,
+        ` <div>
+    <THLoading></THLoading>
+    <THLoading type="balls"></THLoading>
+    <THLoading type="cylon"></THLoading>
+</div>`,
       ],
       text: Loading,
     };

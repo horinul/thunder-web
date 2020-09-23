@@ -16,36 +16,39 @@ export default {
     return {
       code: [
         ` <div>      
-        <THCard>
-        <div slot="title">9.13</div>
-        <div slot="body">今天天气不错</div>
-      </THCard>
-       <THCard type="blue">
-        <div slot="title">9.14</div>
-        <div slot="body">今天天气也不错</div>
-      </THCard></div>`,
+    <THCard>
+      <div slot="title">9.13</div>
+      <div slot="body">今天天气不错</div>
+    </THCard>
+    <THCard type="blue">
+      <div slot="title">9.14</div>
+      <div slot="body">今天天气也不错</div>
+    </THCard>
+</div>`,
         ` <div>      
-        <THCard>
-        <div slot="title">9.13</div>
-        <div slot="body">今天天气不错</div>
-      </THCard>
-      <THCard>
-        <div slot="body">今天天气不错</div>
-      </THCard></div>`,
+    <THCard>
+      <div slot="title">9.13</div>
+      <div slot="body">今天天气不错</div>
+    </THCard>
+    <THCard>
+      <div slot="body">今天天气不错</div>
+    </THCard>
+</div>`,
         `<div>
-         <THCard icon="icon2">
-        <div slot="title">9.13</div>
-        <div slot="body">今天天气不错</div>
-      </THCard>  
-       <THCard icon="icon3">
-        <div slot="title">9.13</div>
-        <div slot="body">今天天气不错</div>
-      </THCard>
+    <THCard icon="icon2">
+      <div slot="title">9.13</div>
+      <div slot="body">今天天气不错</div>
+    </THCard>  
+    <THCard icon="icon3">
+      <div slot="title">9.13</div>
+      <div slot="body">今天天气不错</div>
+    </THCard>
  </div>`,
-        `<div>  <THCard :shadow="false">
-        <div slot="title">9.13</div>
-        <div slot="body">今天天气不错</div>
-      </THCard>
+        `<div>  
+    <THCard :shadow="false">
+      <div slot="title">9.13</div>
+      <div slot="body">今天天气不错</div>
+    </THCard>
 </div>`,
       ],
       text: Card,

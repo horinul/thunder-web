@@ -15,22 +15,26 @@ export default {
   data() {
     return {
       code: [
-        `<div><THButton>蓝色按钮</THButton>
+        `<div>
+    <THButton>蓝色按钮</THButton>
     <THButton type="green">绿色按钮</THButton>
 </div>
     `,
-        `<div><THButton size="little">小号按钮</THButton>
+        `<div>
+    <THButton size="little">小号按钮</THButton>
     <THButton>基本按钮</THButton>
     <THButton size="large">大号按钮</THButton>
     <THButton size="increase">加大按钮</THButton>
 </div>`,
-        `<div><THButton>基本按钮</THButton>
+        `<div>
+    <THButton>基本按钮</THButton>
     <THButton :disabled="true">基本按钮</THButton>
 </div>`,
-        `<div><THButton icon="icon1">基本按钮</THButton>
-        <THButton icon="icon2">基本按钮</THButton>
-        <THButton icon="icon3">基本按钮</THButton>
-        <THButton icon="icon4">基本按钮</THButton>
+        `<div>
+    <THButton icon="icon1">基本按钮</THButton>
+    <THButton icon="icon2">基本按钮</THButton>
+    <THButton icon="icon3">基本按钮</THButton>
+    <THButton icon="icon4">基本按钮</THButton>
 </div>`,
       ],
       text: Button,
