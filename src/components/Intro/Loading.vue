@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Loading from "D:/UITest/markdown-web/Loading.md";
+import Loading from "C:/Users/surface/Desktop/thunder-markdown-web/Loading.md";
 export default {
   components: {
     showCode,

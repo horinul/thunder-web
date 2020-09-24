@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Modal from "D:/UITest/markdown-web/Modal.md";
+import Modal from "C:/Users/surface/Desktop/thunder-markdown-web/Modal.md";
 export default {
   components: {
     showCode,

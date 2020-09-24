@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Input from "D:/UITest/markdown-web/Input.md";
+import Input from "C:/Users/surface/Desktop/thunder-markdown-web/Input.md";
 export default {
   components: {
     showCode,

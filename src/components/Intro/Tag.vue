@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Tag from "D:/UITest/markdown-web/Tag.md";
+import Tag from "C:/Users/surface/Desktop/thunder-markdown-web/Tag.md";
 export default {
   components: {
     showCode,

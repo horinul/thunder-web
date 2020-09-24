@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Icon from "D:/UITest/markdown-web/Icon.md";
+import Icon from "C:/Users/surface/Desktop/thunder-markdown-web/Icon.md";
 export default {
   components: {
     showCode,

@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Radio from "D:/UITest/markdown-web/Radio.md";
+import Radio from "C:/Users/surface/Desktop/thunder-markdown-web/Radio.md";
 export default {
   components: {
     showCode,

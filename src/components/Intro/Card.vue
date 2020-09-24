@@ -1,21 +1,22 @@
 <template>
-  <div>
+<div>
     <h2>Card 卡片</h2>
     <h3>通过卡片展示块状信息</h3>
     <showCode :code="code" :text="text"></showCode>
-  </div>
+</div>
 </template>
+
 <script>
 import showCode from "../showCode";
-import Card from "D:/UITest/markdown-web/Card.md";
+import Card from "C:/Users/surface/Desktop/thunder-markdown-web/Card.md";
 export default {
-  components: {
-    showCode,
-  },
-  data() {
-    return {
-      code: [
-        ` <div>      
+    components: {
+        showCode,
+    },
+    data() {
+        return {
+            code: [
+                ` <div>      
     <THCard>
       <div slot="title">9.13</div>
       <div slot="body">今天天气不错</div>
@@ -25,7 +26,7 @@ export default {
       <div slot="body">今天天气也不错</div>
     </THCard>
 </div>`,
-        ` <div>      
+                ` <div>      
     <THCard>
       <div slot="title">9.13</div>
       <div slot="body">今天天气不错</div>
@@ -34,7 +35,7 @@ export default {
       <div slot="body">今天天气不错</div>
     </THCard>
 </div>`,
-        `<div>
+                `<div>
     <THCard icon="icon2">
       <div slot="title">9.13</div>
       <div slot="body">今天天气不错</div>
@@ -44,16 +45,16 @@ export default {
       <div slot="body">今天天气不错</div>
     </THCard>
  </div>`,
-        `<div>  
+                `<div>  
     <THCard :shadow="false">
       <div slot="title">9.13</div>
       <div slot="body">今天天气不错</div>
     </THCard>
 </div>`,
-      ],
-      text: Card,
-    };
-  },
+            ],
+            text: Card,
+        };
+    },
 };
 </script>
 
