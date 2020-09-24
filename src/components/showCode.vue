@@ -29,37 +29,8 @@
 </template>
 <script>
 import Vue from "vue/dist/vue.esm.js";
-import THAlert from "D:/UITest/thunder-design/packages/Alert/index";
-import THBackTop from "D:/UITest/thunder-design/packages/BackTop/index";
-import THButton from "D:/UITest/thunder-design/packages/Button/index";
-import THCard from "D:/UITest/thunder-design/packages/Card/index";
-import THCheckboxGroup from "D:/UITest/thunder-design/packages/Checkbox/src/checkboxGroup";
-import THCheckbox from "D:/UITest/thunder-design/packages/Checkbox/index";
-import THIcon from "D:/UITest/thunder-design/packages/Icon/index";
-import THInput from "D:/UITest/thunder-design/packages/Input/index";
-import THLoading from "D:/UITest/thunder-design/packages/Loading/index";
-import THMessage from "D:/UITest/thunder-design/packages/Message/index";
-import THModal from "D:/UITest/thunder-design/packages/Modal/index";
-import THRadio from "D:/UITest/thunder-design/packages/Radio/index";
-import THSwitch from "D:/UITest/thunder-design/packages/Switch/index";
-import THTag from "D:/UITest/thunder-design/packages/Tag/index";
-import THTooltip from "D:/UITest/thunder-design/packages/Tooltip/index";
-
-Vue.component("THAlert", THAlert);
-Vue.component("THBackTop", THBackTop);
-Vue.component("THButton", THButton);
-Vue.component("THCard", THCard);
-Vue.component("THCheckbox", THCheckbox);
-Vue.component("THCheckboxGroup", THCheckboxGroup);
-Vue.component("THIcon", THIcon);
-Vue.component("THInput", THInput);
-Vue.component("THLoading", THLoading);
-Vue.component("THMessage", THMessage);
-Vue.component("THModal", THModal);
-Vue.component("THRadio", THRadio);
-Vue.component("THSwitch", THSwitch);
-Vue.component("THTag", THTag);
-Vue.component("THTooltip", THTooltip);
+import thunder from 'thunder-design'
+Vue.use(thunder)
 
 import hljs from "highlight.js";
 // 样式文件
