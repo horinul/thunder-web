@@ -14,9 +14,17 @@
           leave-active-class="animate__animated animate__fadeOut"
         >
           <div v-show="item.iscodeShow">
-            <pre v-highlightjs class="code dv-json-editor">
-            <code>{{ item.codeText }}</code>
-      </pre>
+            <pre v-highlightjs class="code dv-json-editor" id="toCopyCode">
+              <code>{{ item.codeText }}</code>
+               <button class="btn" data-clipboard-target="#toCopyCode" @click="copyCode">
+              <img
+                src="../static/copy.png"
+                alt="Copy to clipboard"
+                class="copyImg"
+              />
+            </button>
+            </pre>
+
             <div class="br"></div>
           </div>
         </transition>
@@ -29,8 +37,8 @@
 </template>
 <script>
 import Vue from "vue/dist/vue.esm.js";
-import thunder from 'thunder-design'
-Vue.use(thunder)
+import thunder from "thunder-design";
+Vue.use(thunder);
 
 import hljs from "highlight.js";
 // 样式文件
@@ -104,6 +112,9 @@ export default {
     },
   },
   methods: {
+    copyCode(){
+      console.log('copyMethods')
+    },
     changeShow(index) {
       this.allList[index].iscodeShow = !this.allList[index].iscodeShow;
       this.allList[index].iscodeShow
@@ -169,6 +180,43 @@ export default {
         height: 1px;
         background-color: #ebebeb;
       }
+
+      .code {
+        // border-radius: 10px 10px 0 0;
+        white-space: pre;
+        background-color: #eaeef3;
+        position: relative;
+      }
+      .btn {
+        background: none;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        .copyImg {
+          position: absolute;
+          height: 20px;
+          width: 20px;
+          left: 5px;
+          top: 5px;
+        }
+      }
+      .btn:focus,
+      .btn:active:focus,
+      .btn.active:focus,
+      .btn.focus,
+      .btn:active.focus,
+      .btn.active.focus {
+        outline: none;
+        // border-color: transparent; // 若是本身具有 border 请删除此属性
+        box-shadow: none;
+        border: 1px solid #5d5d5d;
+        border-radius: 5px;
+      }
+
       .showCodeComponent {
         transition: all 0.3s ease;
       }
@@ -176,11 +224,7 @@ export default {
       .effect {
         max-width: 900px;
       }
-      .code {
-        // border-radius: 10px 10px 0 0;
-        white-space: pre;
-        background-color: #eaeef3;
-      }
+
       .effect {
         border-radius: 0 0 10px 10px;
       }
