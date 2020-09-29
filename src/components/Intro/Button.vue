@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Button from "D:/UITest/markdown-web/Button.md";
+import Button from "../../../../markdown-web/Button.md";
 export default {
   components: {
     showCode,

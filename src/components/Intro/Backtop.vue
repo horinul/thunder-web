@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Backtop from "D:/UITest/markdown-web/Backtop.md";
+import Backtop from "../../../../markdown-web/Backtop.md";
 export default {
   components: {
     showCode,

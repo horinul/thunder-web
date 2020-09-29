@@ -16,7 +16,7 @@
           <div v-show="item.iscodeShow">
             <pre v-highlightjs class="code dv-json-editor" id="toCopyCode">
               <code>{{ item.codeText }}</code>
-               <button class="btn" data-clipboard-target="#toCopyCode" @click="copyCode">
+              <button class="btn" data-clipboard-target="#toCopyCode" @click="copyCode">
               <img
                 src="../static/copy.png"
                 alt="Copy to clipboard"
@@ -71,8 +71,31 @@ export default {
       type: Array,
     },
   },
+  components: {
+    effect: {
+      props: {
+        html: String,
+      },
+      render(h) {
+        const com = Vue.extend({
+          template: this.html,
+        });
+        return h(com, {});
+      },
+    },
+  },
+  data() {
+    return {
+      allList: [],
+      testModal: false,
+    };
+  },
   created() {
-    let textItem = this.text.split("\n");
+    // 此处存在问题，在本地运行环境下\n不会被转义而是直接显示
+    // 但在打包后的情况下，会直接变成空格
+    // todo：debug
+    // let textItem = this.text.split("\n");
+    let textItem = this.text.split(" ");
     for (let i = 0; i < textItem.length - 1; i++) {
       if (this.code[i]) {
         let x = {
@@ -91,29 +114,10 @@ export default {
       }
     }
   },
-  data() {
-    return {
-      allList: [],
-      testModal: false,
-      // 组件数据
-    };
-  },
-  components: {
-    effect: {
-      props: {
-        html: String,
-      },
-      render(h) {
-        const com = Vue.extend({
-          template: this.html,
-        });
-        return h(com, {});
-      },
-    },
-  },
+
   methods: {
-    copyCode(){
-      console.log('copyMethods')
+    copyCode() {
+      console.log("copyMethods");
     },
     changeShow(index) {
       this.allList[index].iscodeShow = !this.allList[index].iscodeShow;

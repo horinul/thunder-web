@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Alert from "D:/UITest/markdown-web/Alert.md";
+import Alert from "../../../../markdown-web/Alert.md";
 export default {
   components: {
     showCode,

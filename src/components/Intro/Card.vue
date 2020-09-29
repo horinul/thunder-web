@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Card from "D:/UITest/markdown-web/Card.md";
+import Card from "../../../../markdown-web/Card.md";
 export default {
   components: {
     showCode,

@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Checkbox from "D:/UITest/markdown-web/Checkbox.md";
+import Checkbox from "../../../../markdown-web/Checkbox.md";
 // import THCheckboxGroup from "D:/UITest/thunder-design/packages/Checkbox/src/checkboxGroup";
 // import THCheckbox from "D:/UITest/thunder-design/packages/Checkbox/index";
 export default {

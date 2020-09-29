@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Switch from "D:/UITest/markdown-web/Switch.md";
+import Switch from "../../../../markdown-web/Switch.md";
 export default {
   components: {
     showCode,

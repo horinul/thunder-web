@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Message from "D:/UITest/markdown-web/Message.md";
+import Message from "../../../../markdown-web/Message.md";
 export default {
   components: {
     showCode,
