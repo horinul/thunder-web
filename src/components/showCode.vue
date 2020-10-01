@@ -94,8 +94,8 @@ export default {
     // 此处存在问题，在本地运行环境下\n不会被转义而是直接显示
     // 但在打包后的情况下，会直接变成空格
     // todo：debug
-    // let textItem = this.text.split("\n");
-    let textItem = this.text.split(" ");
+    let textItem = this.text.split("\n");
+    // let textItem = this.text.split(" ");
     for (let i = 0; i < textItem.length - 1; i++) {
       if (this.code[i]) {
         let x = {
