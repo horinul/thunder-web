@@ -121,17 +121,15 @@ export default {
 
         .main {
             flex: 8;
-            //   background-color: darkgrey;
             max-height: 800px;
-            // margin: 20px;
             padding: 0 20px;
-            // overflow: auto;
-            overflow: hidden;
+            overflow: auto;
+            // overflow: hidden;
         }
 
-        .main:hover {
-            overflow: auto;
-        }
+        // .main:hover {
+        //     overflow: auto;
+        // }
     }
 
     .footer {

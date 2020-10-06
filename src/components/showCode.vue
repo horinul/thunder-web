@@ -2,21 +2,18 @@
   <div class="allComponent">
     <div v-for="(item, index) in allList" :key="index" class="itemComponent">
       <div class="text" v-html="item.text"></div>
-      <div class="component" @click="test($event)">
+      <div class="component" @click="clickMessage($event)">
         <effect
           :html="item.code"
           class="effect"
           v-if="item.showEffect"
         ></effect>
         <div class="br"></div>
-        <transition
-          enter-active-class="animate__animated animate__fadeIn"
-          leave-active-class="animate__animated animate__fadeOut"
-        >
-          <div v-show="item.iscodeShow">
-            <pre v-highlightjs class="code dv-json-editor" id="toCopyCode">
-              <code>{{ item.codeText }}</code>
-              <button class="btn" data-clipboard-target="#toCopyCode" @click="copyCode">
+        <div v-show="item.iscodeShow">
+          <pre v-highlightjs class="code dv-json-editor" id="toCopyCode">
+              <code :id="'code'+index">{{ item.codeText }}</code>
+              <!-- data-clipboard-target="#toCopyCode" -->
+              <button class="btn"  @click="copyCode" data-clipboard-action="copy" :data-clipboard-target="'#code'+index">
               <img
                 src="../static/copy.png"
                 alt="Copy to clipboard"
@@ -25,9 +22,8 @@
             </button>
             </pre>
 
-            <div class="br"></div>
-          </div>
-        </transition>
+          <div class="br"></div>
+        </div>
         <div class="iscodeShow" @click="changeShow(index)">
           {{ item.codeShowText }}
         </div>
@@ -44,6 +40,7 @@ import hljs from "highlight.js";
 // 样式文件
 import("highlight.js/styles/atom-one-light.css");
 
+import Clipboard from "clipboard";
 export default {
   name: "showCode",
   directives: {
@@ -94,8 +91,8 @@ export default {
     // 此处存在问题，在本地运行环境下\n不会被转义而是直接显示
     // 但在打包后的情况下，会直接变成空格
     // todo：debug
-    let textItem = this.text.split("\n");
-    // let textItem = this.text.split(" ");
+    // let textItem = this.text.split("\n");
+    let textItem = this.text.split(" ");
     for (let i = 0; i < textItem.length - 1; i++) {
       if (this.code[i]) {
         let x = {
@@ -117,7 +114,14 @@ export default {
 
   methods: {
     copyCode() {
-      console.log("copyMethods");
+      var clipboard = new Clipboard(".btn");
+      var that = this;
+      clipboard.on("success", function() {
+        that.$message.success("复制成功");
+      });
+      clipboard.on("error", function() {
+        that.$message.error("复制失败");
+      });
     },
     changeShow(index) {
       this.allList[index].iscodeShow = !this.allList[index].iscodeShow;
@@ -125,10 +129,7 @@ export default {
         ? (this.allList[index].codeShowText = "隐藏代码")
         : (this.allList[index].codeShowText = "展示代码");
     },
-    aaa() {
-      alert("aaa");
-    },
-    test(event) {
+    clickMessage(event) {
       if (event.target.innerText === "successMessage") {
         this.$message.success("success");
       } else if (event.target.innerText === "errorMessage") {
@@ -221,9 +222,6 @@ export default {
         border-radius: 5px;
       }
 
-      .showCodeComponent {
-        transition: all 0.3s ease;
-      }
       .code,
       .effect {
         max-width: 900px;

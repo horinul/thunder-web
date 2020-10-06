@@ -4,12 +4,11 @@ import router from './router'
 import store from './store'
 Vue.config.productionTip = false
 
-
-import animate from 'animate.css'
-Vue.use(animate)
-
 import thunder from "thunder-design"
 Vue.use(thunder)
+
+import clipboard from 'clipboard';
+Vue.prototype.clipboard = clipboard;
 
 new Vue({
   router,

@@ -20,7 +20,6 @@ export default {
     <THInput type="textarea" placeholder="textarea"></THInput>
     <THInput type="tel" placeholder="tel"></THInput>
     <THInput  type="password" placeholder="password"></THInput>
-    <THInput  type="email" placeholder="email"></THInput>
     <THInput  type="number" placeholder="number"></THInput>
 </div>`,
         `<div>
