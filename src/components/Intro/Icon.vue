@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Icon from "../../../../markdown-web/Icon.md";
+import Icon from "../../static/markdown-web/Icon.md";
 export default {
   components: {
     showCode,

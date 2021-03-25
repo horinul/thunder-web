@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Input from "../../../../markdown-web/Input.md";
+import Input from "../../static/markdown-web/Input.md";
 export default {
   components: {
     showCode,

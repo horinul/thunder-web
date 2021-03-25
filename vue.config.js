@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath:  process.env.NODE_ENV === 'production'?'/dist/':'/',
+  publicPath:  './',
   chainWebpack: (config) => {
     config.module
       .rule("md")
@@ -14,5 +14,5 @@ module.exports = {
   devServer: {
     port: 8080,
     open: true,
-  },
+  }
 };

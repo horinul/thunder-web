@@ -8,11 +8,14 @@
 
 <script>
 import showCode from "../showCode";
-import Alert from "../../../../markdown-web/Alert.md";
+import Alert from "../../static/markdown-web/Alert.md";
 
 export default {
     components: {
         showCode,
+    },
+    created(){
+        console.log(Alert)
     },
     data() {
         return {

@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Loading from "../../../../markdown-web/Loading.md";
+import Loading from "../../static/markdown-web/Loading.md";
 export default {
   components: {
     showCode,

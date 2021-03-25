@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Modal from "../../../../markdown-web/Modal.md";
+import Modal from "../../static/markdown-web/Modal.md";
 export default {
   components: {
     showCode,

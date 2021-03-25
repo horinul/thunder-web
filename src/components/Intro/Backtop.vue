@@ -8,7 +8,7 @@
 
 <script>
 import showCode from "../showCode";
-import Backtop from "../../../../markdown-web/Backtop.md";
+import Backtop from "../../static/markdown-web/Backtop.md";
 export default {
     components: {
         showCode,

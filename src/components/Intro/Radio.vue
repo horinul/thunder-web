@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Radio from "../../../../markdown-web/Radio.md";
+import Radio from "../../static/markdown-web/Radio.md";
 export default {
   components: {
     showCode,

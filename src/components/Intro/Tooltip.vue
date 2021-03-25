@@ -7,7 +7,7 @@
 </template>
 <script>
 import showCode from "../showCode";
-import Tooltip from "../../../../markdown-web/Tooltip.md";
+import Tooltip from "../../static/markdown-web/Tooltip.md";
 export default {
   components: {
     showCode,
